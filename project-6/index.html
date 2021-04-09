@@ -56,17 +56,50 @@
             <button class="btn-harvest" id="button" type="button" data-id="1">Harvest</button>
             <button class="btn-process" id="button" type="button" data-id="2">Process</button>
             <button class="btn-pack" id="button" type="button" data-id="3">Pack</button>
-            <button class="btn-forsale" id="button" type="button" data-id="4">ForSale</button>
         </div>
         <div class=form-break></div>
+
+        <div class="form-group">
+            <h3>Upload Picture of Farm Produce</h3>
+            <form>
+                <input type="file" accept="image/*" name="image" id="file">
+            </form>
+            <br>
+            <h3>Fetch Picture of Farm Produce</h3>
+                <button type="button" data-id="11">Fetch image</button>
+            <p>Image will appear below</p>
+            <img src="" alt="" id="display_image" height=400 width=400>
+        </div>
+
+        <div class="form-break"></div>
+        <h3>For Sale</h3>
+        <div class="form-group">
+            Product Price
+            <br>
+            <input type="number" id="productPrice" name="productPrice" value=1>ETH
+            <br>
+            <button class="btn-forsale" id="button" type="button" data-id="4">ForSale</button>
+        </div>
         <h2>Product Details</h2>
+            <h3>Buy Product</h3>
+            <div class="form-group">
+                Product Price
+                <br>
+                <input type="number" id="productPrice" name="productPrice" value=1> ETH    
+                <br>
+                Farmer ID
+                <br>
+                <input type="text" id="originFarmerID" name="originFarmerID" value="0x99c289eb2aacec289631a5ddf62cf27a63d4494f"
+                    size="50">
+                <br>
+                <button class="btn-buy" id="button" type="button" data-id="5">Buy</button>
+            </div>
+
         <div class="form-group">
             Product Notes
             <br>
             <input type="text" id="productNotes" name="productNotes" value="Best beans for Espresso" size="60"><br>
-            Product Price
             <br>
-            <input type="number" id="productPrice" name="productPrice" value=1>ETH<br>
             Distributor ID
             <br>
             <input type="text" id="distributorID" name="distributorID" value="0xf1b1bcd24dad92303dd9fe78be639f7bcf9c238d"
@@ -76,12 +109,11 @@
             <br>
             <input type="text" id="retailerID" name="retailerID" value="0x0fb2bfefd526966c87efa19f6693d50971763fc2"
                 size="50"><br>
-            Distributor ID
+            Consumer ID
             <br>
             <input type="text" id="consumerID" name="consumerID" value="0x5d777e9127b28fb119e81a6304278a0a21bef1c4"
                 size="50"><br>
             <br>
-            <button class="btn-buy" id="button" type="button" data-id="5">Buy</button>
             <button class="btn-ship" id="button" type="button" data-id="6">Ship</button>
             <button class="btn-receive" id="button" type="button" data-id="7">Receive</button>
             <button class="btn-purchase" id="button" type="button" data-id="8">Purchase</button>
@@ -100,9 +132,10 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- <script src="js/web3.min.js"></script> -->
-    <script src="js/truffle-contract.js"></script>
-    <script src="js/app.js"></script>
+    <script src="node_modules/@truffle/contract/dist/truffle-contract.js"></script>
+    <script src="src/js/app.js"></script>
+    <script src="node_modules/web3/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script>
 </body>
 
 </html>

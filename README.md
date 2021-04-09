@@ -8,9 +8,15 @@ The DApp User Interface when running should look like...
 
 ![truffle test](images/ftc_farm_details.png)
 
-![truffle test](images/ftc_product_details.png)
+![truffle test](images/imageuploadandfetching.JPG)
 
-![truffle test](images/ftc_transaction_history.png)
+![truffle test](images/forsale.JPG)
+
+![truffle test](images/buy.JPG)
+
+![truffle test](images/product.JPG)
+
+![truffle test](images/txnHistory.png)
 
 
 ## Getting Started
@@ -89,6 +95,22 @@ In a separate terminal window, launch the DApp:
 ```
 npm run dev
 ```
+
+### Testing on Rinkeby Network
+- Create a file called .secret on the root folder
+
+- Copy your metamask wallet seed into the file
+
+- In your terminal window, launch the DApp:
+
+```
+npm run dev
+```
+
+A webpage should open in your browser. Ensure the browser has the metamask extension installed. If not copy the url and open it in the browser with metamask installed.
+
+contract_address: 0xac80b5e5e26bf3787591bc3b52a0de4679c53e71
+Transaction_Hash: 0x44f137a009202916348c76eceb198146c0477273efd1c955f137f3497ce3b93e
 
 ## Built With
 

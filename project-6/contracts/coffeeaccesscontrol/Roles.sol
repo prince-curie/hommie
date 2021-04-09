@@ -1,5 +1,5 @@
-pragma solidity ^0.4.24;
-
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.4.23;
 /**
  * @title Roles
  * @dev Library for managing addresses assigned to a Role.
