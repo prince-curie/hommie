@@ -16,7 +16,7 @@ The DApp User Interface when running should look like...
 
 ![truffle test](images/product.JPG)
 
-![truffle test](images/txnHistory.png)
+![truffle test](images/txnHistory.PNG)
 
 
 ## Getting Started
